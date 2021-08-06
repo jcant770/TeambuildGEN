@@ -1,0 +1,28 @@
+body {
+    font-family: 'STIX Two Text', serif;
+}
+
+:root {
+    --space-cadet: #2d3047ff;
+    --azure-x-11-web-color: #f2fdffff;
+    --earth-yellow: #e0a458ff;
+    --steel-teal: #6a858aff;
+    --eerie-black: #131515ff;
+}
+
+html{
+    background-color: var(--earth-yellow);
+}
+
+.card {
+    background-color: transparent;
+}
+
+.title{
+    color: var(--space-cadet);
+}
+
+.container {
+    justify-content: space-evenly;
+    display: flex;
+}
