@@ -84,7 +84,7 @@ GENhtml = (data) => {
     const employeeCs = CArray.join('')
 
     const GENTeam = GENteamhtml(employeeCs);
-    return GENteamhtml;
+    return GENTeam;
 }
 
 const GENteamhtml = function (employeeCs) {
