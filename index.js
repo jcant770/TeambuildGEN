@@ -69,7 +69,7 @@ const addManager = () => {
         const  { name, id, email, officeNumber } = managerInput; 
         const manager = new Manager (name, id, email, officeNumber);
 
-        teamArray.push(manager); 
+        teamA.push(manager); 
         console.log(manager); 
     })
 };
@@ -174,24 +174,24 @@ const addEmployee = () => {
             console.log(employee);
         }
 
-        teamArray.push(employee); 
+        teamA.push(employee); 
 
         if (confirmAddEmployee) {
-            return addEmployee(teamArray); 
+            return addEmployee(teamA); 
         } else {
-            return teamArray;
+            return teamA;
         }
     })
 
 };
 
-const WriteFile = data => {
-    fs.WriteFile('./dist/index.html', data, err => {
+const writeFile = data => {
+    fs.writeFile('./dist/index.html', data, err => {
         if (err) {
             console.log(err);
             return;
         }else{
-            console.log("Team sit has successfully made")
+            console.log("Team site has successfully made")
         }
     })
 };
@@ -202,7 +202,7 @@ addManager()
         return GENhtml(teamA);
     })
     .then(pagehtml => {
-        return WriteFile(pagehtml);
+        return writeFile(pagehtml);
     })
     .catch(err => {
         console.log(err);
